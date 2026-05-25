@@ -1,83 +1,149 @@
-🎓 FAST NUCES — Campus Information & Tour Guide
+# 🎓 FAST NUCES — Campus Information & Tour Guide
 
-A responsive, static website serving as a digital information hub and virtual tour guide for FAST National University of Computer and Emerging Sciences (NUCES).
+> A fully responsive, static website serving as a digital information hub and virtual tour guide for **FAST National University of Computer and Emerging Sciences (NUCES).**
 
+---
 
-📌 Overview
-This project is a fully responsive, static website built as an ICT (Information & Communication Technology) course project. It is designed to provide prospective students, visitors, and current students with a comprehensive, easy-to-navigate digital guide to FAST NUCES.
-The website covers everything from academic departments and admissions to campus sports and student life — all presented in a clean, structured, and visually accessible format without requiring any backend infrastructure or frameworks.
+## 📌 Overview
 
-🖥️ Tech Stack
-TechnologyPurposeHTML5Page structure, semantic markup, and content layoutCSS3Styling, animations, and responsive layoutJavaScriptInteractivity, DOM manipulation, and dynamic behaviour
+This project is a static **ICT (Information & Communication Technology)** course assignment designed to provide prospective students, visitors, and current students with a complete digital guide to FAST NUCES.
 
-Built entirely with vanilla web technologies — no frameworks, no libraries, no external dependencies.
+The website includes academic departments, admissions guidance, campus services, sports activities, and general university information — all built without any backend, frameworks, or external libraries.
 
+---
 
-✨ Features
+## 🖥️ Tech Stack
 
-📱 Fully Responsive Design — Seamlessly adapts to desktop, tablet, and mobile screen sizes
-🏛️ University Overview — Introduction to FAST NUCES, its mission, history, and values
-🎓 Departments Pages — Dedicated pages for CS, CE, and EE departments
-📋 Admissions Information — Guide for prospective students on how to apply
-🏟️ Sports & Activities — Coverage of university sports including football, cricket, basketball, badminton, volleyball, and futsal
-🌐 Multi-Page Navigation — Smooth navigation across all sections of the site
-📞 Contact Page — Campus contact details and location information
-⚡ Lightweight & Fast — Pure static site with no build process, ensuring quick load times
-🌍 Cross-Browser Compatible — Works consistently across all modern browsers
+| Technology | Purpose |
+|:----------:|:--------|
+| **HTML5** | Structure and semantic layout |
+| **CSS3** | Styling, responsiveness, animations |
+| **JavaScript** | Interactivity and DOM manipulation |
 
+> ✔ Pure vanilla web technologies &nbsp;|&nbsp; ✔ No frameworks or dependencies &nbsp;|&nbsp; ✔ Lightweight static site
 
-📁 Project Structure
-/
-├── index.html          # Homepage — main entry point
-├── about.html          # About FAST NUCES
-├── departments.html    # Departments overview
-├── cs_dep.html         # Computer Science department page
-├── ce_dep.html         # Computer Engineering department page
-├── ee_dep.html         # Electrical Engineering department page
-├── admissions.html     # Admissions information
-├── services.html       # Campus services
-├── contact.html        # Contact & location
+---
+
+## ✨ Features
+
+| # | Feature | Description |
+|:-:|:--------|:------------|
+| 1 | 📱 **Responsive Design** | Optimized for mobile, tablet, and desktop |
+| 2 | 🏛️ **University Overview** | Mission, vision, and introduction to FAST NUCES |
+| 3 | 🎓 **Department Pages** | Dedicated sections for CS, CE, and EE |
+| 4 | 📋 **Admissions Guide** | Step-by-step application process |
+| 5 | 🏟️ **Sports & Activities** | Cricket, football, basketball, badminton, volleyball, futsal |
+| 6 | 🌐 **Multi-Page Navigation** | Smooth and structured page flow |
+| 7 | 📞 **Contact Page** | Campus details and location information |
+| 8 | ⚡ **Fast Performance** | No build tools or external dependencies |
+| 9 | 🌍 **Cross-Browser Support** | Works on all modern browsers |
+
+---
+
+## 📁 Project Structure
+
+```
+📦 FAST-NUCES-Tour-Guide
 │
-├── football.html       # Football sports page
-├── cricket.html        # Cricket sports page
-├── basketball.html     # Basketball sports page
-├── badminton.html      # Badminton sports page
-├── volleyball.html     # Volleyball sports page
-├── futsal.html         # Futsal sports page
+├── 📄 index.html           # Homepage — main entry point
+├── 📄 about.html           # About FAST NUCES
+├── 📄 departments.html     # Departments overview
+├── 📄 admissions.html      # Admissions information
+├── 📄 services.html        # Campus services and facilities
+├── 📄 contact.html         # Contact and location
 │
-├── style.css           # Main stylesheet
-├── script.js           # JavaScript for interactivity
-└── image/              # Campus photos and visual assets
+├── 📄 cs_dep.html          # Computer Science department
+├── 📄 ce_dep.html          # Computer Engineering department
+├── 📄 ee_dep.html          # Electrical Engineering department
+│
+├── 📄 football.html        # Football
+├── 📄 cricket.html         # Cricket
+├── 📄 basketball.html      # Basketball
+├── 📄 badminton.html       # Badminton
+├── 📄 volleyball.html      # Volleyball
+├── 📄 futsal.html          # Futsal
+│
+├── 🎨 style.css            # Main stylesheet
+├── ⚙️ script.js            # JavaScript logic
+└── 🖼️ image/               # Campus photos and visual assets
+```
 
-📄 Pages & Sections
-🏠 Core Pages
-PageDescriptionindex.htmlLanding page with university introduction and site navigationabout.htmlHistory, mission, vision, and overview of FAST NUCESdepartments.htmlOverview of all academic departmentsadmissions.htmlStep-by-step admissions guide for prospective studentsservices.htmlCampus services and facilities available to studentscontact.htmlCampus address, contact details, and location info
-🎓 Department Pages
-PageDescriptioncs_dep.htmlComputer Science — programs, curriculum, and faculty infoce_dep.htmlComputer Engineering — programs, curriculum, and faculty infoee_dep.htmlElectrical Engineering — programs, curriculum, and faculty info
-⚽ Sports Pages
-PageDescriptionfootball.htmlUniversity football team and eventscricket.htmlUniversity cricket team and eventsbasketball.htmlUniversity basketball team and eventsbadminton.htmlUniversity badminton team and eventsvolleyball.htmlUniversity volleyball team and eventsfutsal.htmlUniversity futsal team and events
+---
 
-🎯 Purpose & Learning Outcomes
-This project was developed as part of an ICT (Information & Communication Technology) course assignment with the following objectives:
+## 📄 Pages Overview
 
-✅ Apply and demonstrate core web development skills — HTML, CSS, and JavaScript
-✅ Design a practical, real-world use-case website with genuine utility
-✅ Practice responsive design principles for multi-device compatibility
-✅ Structure a multi-page static site with clean, maintainable code
-✅ Create an accessible and informative digital resource for FAST NUCES
+### 🏠 Core Pages
 
+| Page | Description |
+|:-----|:------------|
+| `index.html` | Homepage with introduction and site navigation |
+| `about.html` | History, mission, and vision of FAST NUCES |
+| `departments.html` | Overview of all academic departments |
+| `admissions.html` | Admissions process and entry requirements |
+| `services.html` | Campus facilities and student services |
+| `contact.html` | Contact details and campus location |
 
-🏫 About FAST NUCES
-FAST National University of Computer and Emerging Sciences (NUCES) is one of Pakistan's premier universities, specialising in computer science, software engineering, and emerging technologies. Established under the Higher Education Commission of Pakistan, FAST NUCES is renowned for producing highly skilled graduates who go on to lead in both national and international technology sectors.
-The university operates campuses across multiple cities:
+---
 
-🏙️ Karachi
-🏙️ Lahore
-🏙️ Islamabad
-🏙️ Peshawar
-🏙️ Chiniot-Faisalabad
+### 🎓 Department Pages
 
+| Page | Department |
+|:-----|:-----------|
+| `cs_dep.html` | Computer Science |
+| `ce_dep.html` | Computer Engineering |
+| `ee_dep.html` | Electrical Engineering |
 
-👤 Author
-Hiba Eman
-ICT Project — FAST National University of Computer and Emerging Sciences
+---
+
+### ⚽ Sports Pages
+
+| Page | Sport |
+|:-----|:------|
+| `football.html` | Football |
+| `cricket.html` | Cricket |
+| `basketball.html` | Basketball |
+| `badminton.html` | Badminton |
+| `volleyball.html` | Volleyball |
+| `futsal.html` | Futsal |
+
+---
+
+## 🎯 Purpose & Learning Outcomes
+
+This project was created as part of an **ICT course** with the following goals:
+
+- ✅ Apply core web development skills — HTML, CSS, JavaScript
+- ✅ Build a real-world, multi-page static website
+- ✅ Practice responsive web design principles
+- ✅ Organise structured and maintainable front-end code
+- ✅ Create a useful informational campus guide
+
+---
+
+## 🏫 About FAST NUCES
+
+**FAST National University of Computer and Emerging Sciences (NUCES)** is one of Pakistan's premier universities, specialising in computer science, software engineering, and emerging technologies. Established under the Higher Education Commission of Pakistan, it is widely recognised for producing highly skilled graduates in the tech industry.
+
+**Campuses:**
+
+| City |
+|:-----|
+| Karachi |
+| Lahore |
+| Islamabad |
+| Peshawar |
+| Chiniot–Faisalabad |
+
+---
+
+## 👤 Author
+
+| | |
+|:--|:--|
+| **Name** | Hiba Eman |
+| **Project** | ICT Course Assignment |
+| **Institution** | FAST National University of Computer and Emerging Sciences |
+
+---
+
+> ⭐ *This is a static educational project built for academic purposes only.*
