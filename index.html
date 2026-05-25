@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAST CFD Tour Guide</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">FAST CFD</div>
+
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About Campus</a></li>
+                <li><a href="departments.html">Departments</a></li>
+                <li><a href="admissions.html">Admissions</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="services.html">Services</a></li> 
+            </ul>
+
+            <input type="text" id="searchBar" placeholder="Search..." onkeyup="searchWebsite(event)">
+
+
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Welcome to FAST University</h1>
+        <button class="explore-btn" onclick="exploreCampus()">Explore Campus</button>
+
+    </section>
+
+    <section class="features h2sec">
+        <h2>What You Will Find</h2>
+
+<div class="feature-container">
+
+    <div class="feature-box" onclick="goToPage('about.html')">
+        <h3>Campus Overview</h3>
+        <p>Get a brief introduction about FAST CFD Campus.</p>
+    </div>
+
+    <div class="feature-box" onclick="goToPage('departments.html')">
+        <h3>Departments</h3>
+        <p>Explore all academic departments in the campus.</p>
+    </div>
+
+    <div class="feature-box" onclick="goToPage('admissions.html')">
+        <h3>Admissions</h3>
+        <p>Learn about admission process, eligibility, and deadlines.</p>
+    </div>
+
+    <div class="feature-box" onclick="goToPage('contact.html')">
+        <h3>Contact</h3>
+        <p>Reach out to the campus administration for info.</p>
+    </div>
+
+</div>
+
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Campus</a></li>
+                    <li><a href="departments.html">Departments</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="services.html">Services</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-contact">
+                <h4>Get in Touch</h4>
+                <p>9 KM Chiniot-Faisalabad Road, Chiniot</p>
+                <p>Email: info@nu.edu.pk</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© 2025 FAST University Chiniot–Faisalabad Campus | Tour Guide Project</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

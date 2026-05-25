@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Departments - FAST CFD Campus</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">FAST CFD</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Campus</a></li>
+                <li><a href="departments.html" class="active">Departments</a></li>
+                <li><a href="admissions.html">Admissions</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="services.html">Services</a></li>
+            </ul>
+            <input type="text" id="searchBar" placeholder="Search..." onkeyup="searchWebsite(event)">
+        </nav>
+    </header>
+
+    <main>
+        <section class="departments-section">
+            <h1>Academic Departments</h1>
+            <p>
+                At FAST CFD Campus, we offer a range of departments combining theoretical knowledge 
+                with hands-on practical experience. Our departments are equipped with state-of-the-art labs, 
+                highly qualified faculty, and modern learning tools to prepare students for the challenges of the tech industry.
+                Students in each department are encouraged to participate in research projects, innovation competitions, 
+                and collaborative workshops. Our mission is to produce highly skilled graduates ready for both industry and academia.
+            </p>
+
+            <article class="department">
+                <h2>Computer Science</h2>
+                <img src="cs_dep.jpg" alt="Computer Science Department" class="department-img">
+                <p>
+                    The Computer Science department focuses on programming, artificial intelligence, 
+                    software engineering, machine learning, data science, and cybersecurity. 
+                    Students gain proficiency in multiple programming languages and modern software tools.
+                    Our lab facilities include AI labs, cloud computing platforms, and coding hubs 
+                    where students work on real-world projects. Graduates often excel in software development, 
+                    research, and technology entrepreneurship.
+                </p>
+            </article>
+
+            <article class="department">
+                <h2>Computer Engineering</h2>
+                <img src="ce_dep.jpg" alt="Computer Engineering Department" class="department-img">
+                <p>
+                    The Computer Engineering department bridges the gap between electrical engineering and computer science. 
+                    Students learn about embedded systems, computer architecture, networking, and hardware-software integration.
+                    Practical workshops allow students to design microcontrollers, circuit boards, and IoT devices. 
+                    Our graduates are highly sought after in industries focusing on robotics, hardware development, and intelligent systems.
+                </p>
+            </article>
+
+            <article class="department">
+                <h2>Electrical Engineering</h2>
+                <img src="ee_dep.jpg" alt="Electrical Engineering Department" class="department-img">
+                <p>
+                    The Electrical Engineering department emphasizes circuits, electronics, communication systems, 
+                    renewable energy, and power engineering. Students are trained on both theoretical concepts and practical lab work.
+                    Our department encourages innovation in energy-efficient solutions, smart grids, and embedded electronics. 
+                    Graduates often pursue careers in power systems, telecommunications, and advanced electronics research.
+                </p>
+            </article>
+
+            <section class="departments-highlights">
+                <h2>Why Choose FAST CFD Departments?</h2>
+                <ul>
+                    <li>Modern labs and workshops with industry-standard equipment.</li>
+                    <li>Hands-on research and project-based learning.</li>
+                    <li>Collaboration opportunities with tech companies and startups.</li>
+                    <li>Experienced faculty with expertise in multiple research areas.</li>
+                    <li>Access to conferences, seminars, and global tech competitions.</li>
+                </ul>
+            </section>
+
+            <section class="departments-contact">
+                <h2>Interested in Joining?</h2>
+                <p>
+                    Take the next step towards an exciting career in technology and engineering. 
+                    Learn more about the admission process or contact our campus administration for guidance.
+                </p>
+                <div class="cta-buttons">
+                    <button onclick="goToPage('admissions.html')">View Admissions</button>
+                    <button onclick="goToPage('contact.html')">Contact Us</button>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 FAST University Chiniot–Faisalabad Campus | Tour Guide Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

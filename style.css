@@ -1,0 +1,537 @@
+/* General & Typography */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    color: #004d99; /* FAST Blue */
+    margin-bottom: 15px;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #004d99; /* Dark Blue */
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 5px 0;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #a6caff; /* Yellow accent */
+    border-bottom: 2px solid #73abff;
+}
+
+#searchBar {
+    padding: 8px 10px;
+    border: none;
+    border-radius: 4px;
+    width: 200px;
+    font-size: 1em;
+}
+
+/* Sections & Containers */
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+/* Hero Section (index.html) */
+.hero {
+    background-color: #e6f0ff; /* Light blue background */
+    text-align: center;
+    padding: 60px 20px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    background-image: url("image.png");
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: #e6f0ff; 
+    min-height: 300px;
+    background-image: linear-gradient(rgba(0, 30, 60, 0.55), rgba(0, 30, 60, 0.55)), url("image.png");
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    color: #ffffff;
+    margin-bottom: 10px;
+    margin-top: 40px;
+}
+
+.explore-btn {
+    background-color: #004d99;
+    color: #ffffff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+.explore-btn:hover {
+    background-color: #003366;
+    transform: translateY(-1px);
+}
+
+/* Features Section (index.html) */
+.feature-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.feature-box {
+    flex: 1;
+    min-width: 250px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.h2sec{
+    text-align: center;
+}
+
+.feature-box:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+
+.feature-box h3 {
+    color: #004d99;
+}
+
+.about-intro {
+    margin-bottom: 15px;
+    line-height: 1.7;
+    text-align: center;
+}
+
+
+/* Campus Grounds (about.html) */
+.grounds-grid {
+    display: grid;
+    /* ADJUSTMENT: Set the grid to have two equal columns (1fr 1fr) */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.ground-item {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    /* Optional: Add a smooth hover effect from previous suggestions */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.ground-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+.ground-item img {
+    width: 100%;
+    /* ADJUSTMENT: Set height to 250px (smaller than 350px) to better 
+       accommodate two images per row without making the page too long. */
+    height: 250px; 
+    /* Ensures the image covers the slot */
+    object-fit: cover; 
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+/* Add Responsive adjustment for smaller screens */
+@media (max-width: 768px) {
+    .grounds-grid {
+        /* On small screens, revert to one column */
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Departments (departments.html) */
+.department {
+    /* 1. Allows elements to break onto new lines */
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    
+    align-items: flex-start;
+    text-align: left; 
+    
+    gap: 20px;
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-left: 5px solid #004d99;
+    border-radius: 8px;
+}
+
+/* 2. HEADING SEPARATION: Forces H2 to the top row (100% width) */
+.department h2 {
+    width: 100%;
+    flex-basis: 100%; 
+    margin-top: 0;
+    margin-bottom: 10px; 
+}
+
+/* 3. IMAGE SIZE: Fixed size on the left */
+.department-img {
+    width: 400px; 
+    height: 280px; 
+    
+    object-fit: cover; 
+    border-radius: 6px;
+    flex-shrink: 0; /* Ensures image maintains size */
+}
+
+/* 4. CONTENT FLOW: Allows remaining content (P tags) to flow to the right of the image */
+.department p {
+    /* Sets the minimum width to zero and allows it to grow and fill the rest of the space */
+    flex-basis: 0; 
+    flex-grow: 1; 
+    min-width: 50%; /* Ensures paragraphs don't squeeze too small */
+
+    text-align: justify; 
+    margin-top: 0; 
+    margin-bottom: 10px;
+}
+/* Remaining department-related styles (unchanged) */
+.departments-section h1 {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.departments-section p {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    text-align: justify;
+}
+
+.departments-highlights ul {
+    list-style: none;
+    padding: 0;
+}
+
+.departments-highlights li {
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10"><circle cx="5" cy="5" r="5" fill="%23004d99"/></svg>') no-repeat left center;
+    background-size: 8px 8px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.cta-buttons button {
+    background-color: #004d99;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-right: 15px;
+    transition: background-color 0.3s;
+}
+
+.cta-buttons button:hover {
+    background-color: #003366;
+}
+
+/* Admissions (admissions.html) */
+.page-header {
+    background-color: #004d99;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    margin-bottom: 25px;
+    border-radius: 8px;
+}
+
+.page-header h1 {
+    color: white;
+}
+
+.admission-section ul, .admission-section ol {
+    padding-left: 25px;
+    margin-top: 15px;
+}
+
+.admission-section li {
+    margin-bottom: 10px;
+}
+
+.admission-section a {
+    display: inline-block;
+    background-color: #007bff; /* Secondary Blue */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.admission-section a:hover {
+    background-color: #0056b3;
+}
+
+/* Contact (contact.html) */
+.contact-section ul, .hours-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-section li, .hours-section li {
+    margin-bottom: 10px;
+}
+
+.contact-section li strong, .hours-section li strong {
+    min-width: 120px;
+    display: inline-block;
+}
+
+.map-section {
+    text-align: center;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.contact-form button {
+    background-color: #004d99;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #003366;
+}
+
+.social-links a {
+    display: inline-block;
+    background-color: #004d99;
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+}
+
+.social-links a:hover {
+    background-color: #003366;
+}
+
+/* Services (services.html) */
+.services-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.services-section li {
+    background-color: #f0f8ff;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-left: 4px solid #004d99;
+    border-radius: 4px;
+}
+
+.alumni-features {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.alumni-card {
+    flex: 1;
+    min-width: 200px;
+    padding: 20px;
+    background-color: #fff3cd; 
+    border: 1px solid #ffeeba;
+    border-radius: 8px;
+}
+
+.alumni-card h3 {
+    color: #856404; /* Darker text for the card */
+}
+
+.sports-services ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+/* FOOTER STRUCTURE */
+footer {
+    background-color: #00264d; 
+    color: white;
+    padding: 30px 20px 15px;
+    margin-top: 30px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly; 
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    flex-basis: 200px;
+    margin-bottom: 20px;
+}
+
+.footer-links, .footer-contact {
+    flex-basis: 250px; 
+    margin-bottom: 20px;
+}
+
+.footer-links h4, .footer-contact h4 {
+    color: white;
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    line-height: 1.8;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #a6caff; /* Light blue/white hover */
+}
+
+.footer-contact p {
+    margin-bottom: 8px;
+    font-size: 0.95em;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 15px;
+    font-size: 0.85em;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* Responsive adjustment for small screens */
+@media (max-width: 600px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .nav-links li {
+        margin: 5px 0;
+    }
+
+    .feature-container {
+        flex-direction: column;
+    }
+
+    .department {
+        flex-direction: column;
+    }
+
+    .department-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .alumni-features {
+        flex-direction: column;
+    }
+}
+
+
+
+
